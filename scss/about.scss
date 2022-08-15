@@ -1,0 +1,33 @@
+.about {
+    background-color: $grayColor;
+}
+.about__inner {
+    padding-top: 152px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about__title::before {
+    content: "";
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: $grayColor;
+    top: 0;
+    right: 0;
+}
+.about__text {
+    flex-basis: 770px;
+}
+.about__text-content {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+.about__text-content:first-child {
+    margin-bottom: 20px;
+}
+.about__text-content:last-child {
+    margin-bottom: 159px;
+}

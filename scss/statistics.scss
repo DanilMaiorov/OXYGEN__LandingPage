@@ -1,0 +1,22 @@
+
+.statistics__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 164px 0 194px 0;
+}
+.statistics__item {
+    
+    text-align: center;
+}
+.statistics__num {
+    font-family: $secondFont;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+}
+.statistics__text {
+    font-weight: 400;
+    line-height: 19px;
+    color: #00B2A0;
+}

@@ -1,0 +1,83 @@
+
+.pricing {
+    background-color: $grayColor;
+    padding-top: 144px;
+}
+.pricing__title {
+    font-size: 60px;    
+    margin-bottom: 109px;
+    display: inline-block;
+}
+.pricing__title::before {
+    content: "";
+    width: 14px;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: $grayColor;
+    top: 0;
+    right: 0;
+}
+.pricing__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 162px;
+}
+.pricing__item {
+    flex-basis: 100%;
+    background-color: #fff;
+    padding: 24px 25px 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pricing__item-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+.pricing__item-rate {
+    font-size: 80px;
+    line-height: 109px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.pricing__item-rate::before {
+    content: "$";
+    position: absolute;
+    font-size: 40px;
+    line-height: 54px;
+    top: 15px;
+    left: -27px;
+}
+.pricing__item-rate::after {
+    content: "/ mo";
+    position: absolute;
+    font-size: 20px;
+    line-height: 27px;
+    bottom: 18px;
+    width: 43px;
+    left: 90px;
+}
+.pricing__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 55px;
+}
+.pricing__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: $secondFont;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1.2px;
+    padding: 15px;
+    margin-bottom: 38px;
+}

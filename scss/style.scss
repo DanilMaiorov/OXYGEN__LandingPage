@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700&display=swap');
+
+$mainFont: 'Open Sans', sans-serif;
+$secondFont: 'Montserrat', sans-serif;
+$thirdFont: 'Raleway', sans-serif;
+$fourthFont: 'Merriweather', serif;
+
+$mainFontSize: 14px;
+$mainFontWeight: 300;
+
+$mainColor: #242121;
+
+$grayColor: #F6F8FA;
+$darkGrayColor: #373A39;
+$blackColor: #2A2C2B;
+$orangeColor: #FCBB08;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: $mainFont;
+    font-size: $mainFontSize;
+    font-weight: $mainFontWeight;
+    line-height: 24px;
+    color: $mainColor;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+/*     width: 100%;
+    height: auto; */
+    object-fit: cover;
+    display: block;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.title {
+    font-family: $secondFont;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: -1.65px;
+    position: relative;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 85px;  
+    width: 60px;
+    border-bottom: 4px solid $orangeColor;
+}
+
+@import "./header.scss";
+@import "./about.scss";
+@import "./expertise.scss";
+@import "./features.scss";
+@import "./portfolio.scss";
+@import "./video.scss";
+@import "./statistics.scss";
+@import "./slider.scss";
+@import "./team.scss";
+@import "./pricing.scss";
+@import "./info.scss";
+@import "./footer.scss";
+
+@import "./media.scss";

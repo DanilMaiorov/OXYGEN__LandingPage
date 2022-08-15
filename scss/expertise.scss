@@ -1,0 +1,114 @@
+.expertise__wrapper {
+    margin-top: 143px;
+    margin-bottom: 164px;
+}
+.expertise__title {
+    font-size: 60px;
+    //max-width: 411px;
+    display: inline-block;
+}
+.expertise__title::before {
+    content: "";
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+}
+.expertise__content {
+    margin-top: 107px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.expertise__content-items {
+    flex-basis: 370px;
+    margin-bottom: 110px;
+}
+.expertise__content-item {
+    max-height: 24px;
+    height: 100%;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #1D1D1D;
+    position: relative;
+    border-top: 2px solid #F0F0F0;
+}
+.expertise__content-item:nth-child(2) {
+    margin: 28px 0;
+}
+.expertise__content-item:first-child::before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #1D1D1D;
+    top: -2px;
+    left: 0;
+    width: 90%;
+}
+.expertise__content-item:first-child::after {
+    content: "90%";
+    position: absolute;
+    top: 0;
+    left: 88%;
+}
+.expertise__content-item:nth-child(2):before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #1D1D1D;
+    top: -2px;
+    left: 0;
+    width: 80%;
+}
+.expertise__content-item:nth-child(2):after {
+    content: "80%";
+    position: absolute;
+    top: 0;
+    left: 78%;
+}
+.expertise__content-item:last-child::before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #1D1D1D;
+    top: -2px;
+    left: 0;
+    width: 85%;
+}
+.expertise__content-item:last-child::after {
+    content: "85%";
+    position: absolute;
+    top: 0;
+    left: 83%;
+}
+.expertise__content-text {
+    flex-basis: 770px;
+}
+.expertise__content-text-item {
+    color: #373A39;
+}
+.expertise__content-text-item:first-child {
+    margin-bottom: 12px;
+}
+.expertise__items {
+    display: flex;
+    gap: 30px;
+}
+.expertise__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+.expertise__item-title {
+    margin-bottom: 14px;
+    font-family: $thirdFont;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 4.2875px;
+    color: #333333;
+}
+.expertise__item-text {
+    color: #777777;
+}

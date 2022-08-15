@@ -1,0 +1,82 @@
+.footer {
+}
+.footer__body {
+    background-color: $darkGrayColor;
+    margin: 0 auto;
+    position: relative;
+}
+.container {
+}
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 125px;
+}
+.logo {
+}
+.logo--line {
+    width: 150px;
+    border-bottom: 2px solid $orangeColor;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 84px;
+    margin-bottom: 73px;
+}
+.logo__link {
+}
+.logo__img {
+}
+.footer__social {
+    font-family: $secondFont;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    display: inline-flex;
+    gap: 31px;
+}
+.footer__social-link {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 65px;
+}
+.footer__social-link:hover {
+    color: #bcbcbc;
+}
+.footer__adress,
+.footer__phone,
+.footer__email {
+    font-weight: 400;
+    line-height: 32px;
+    color: #A8A8A8;
+}
+.footer__phone,
+.footer__email {
+    transition: all 0.3s ease;
+}
+.footer__phone:hover,
+.footer__email:hover {
+    color: #bcbcbc;
+}
+.footer__top-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 48%;
+}
+.footer__copy {
+    background-color: $blackColor;
+    padding: 42px 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #CCCCCC;
+}
