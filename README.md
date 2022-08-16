@@ -1,4 +1,5 @@
 # OXYGEN__LandingPage
+Training Project
 
 Author Danil Maiorov
 
