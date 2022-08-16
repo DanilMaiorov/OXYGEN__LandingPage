@@ -3,7 +3,7 @@ Training Project
 
 Author Danil Maiorov
 
-HTML/SCSS/JS
+HTML/SCSS (FLEX/GRID)/JS
 
 Used BEM
 
