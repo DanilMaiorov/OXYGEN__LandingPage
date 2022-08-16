@@ -106,7 +106,7 @@
 
 //Бургер
 
-.header__burger {
+.burger__btn {
     display: none;
     width: 80px;
     height: 80px;
@@ -114,29 +114,102 @@
     align-items: center;
     cursor: pointer;
 }
-.header__burger--line {
+.burger__btn--line {
     width: 100%;
     height: 7px;
-    background-color: #000;
+    background-color: #373A39;
     border-radius: 3.5px;
     position: relative;
 }
 
-.header__burger--line::before {
+.burger__btn--line::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 7px;
-    background-color: #000;
+    background-color: #373A39;
     border-radius: 3.5px;
     top: 17px;
 }
-.header__burger--line::after {
+.burger__btn--line::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 7px;
-    background-color: #000;
+    background-color: #373A39;
     border-radius: 3.5px;
     bottom: 17px;
+}
+.burger__menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0%;
+    right: 0%;
+    //display: flex;
+    flex-direction: row-reverse;
+}
+.burger__menu-list {
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 100px 100px 0 0;
+    gap: 30px;
+    color: $darkGrayColor;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: $secondFont;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.5s;  
+}
+.burger__menu-list a:hover {
+    font-weight: 700;
+}
+.burger__menu-link {
+    padding: 10px 0;
+}
+.burger__overlay {
+    width: 40%;
+    height: 100%;
+    background-color: $darkGrayColor;
+    opacity: 0.5;
+    position: relative;
+}
+.burger__close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 80px;
+    left: 100px;
+    cursor: pointer;
+    padding: 25px;
+}
+.burger__close::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1.5px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+.burger__close::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1.5px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 25px;
+    left: 10px;
 }
