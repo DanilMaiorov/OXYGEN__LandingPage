@@ -76,11 +76,21 @@ img {
 
 .header__top {
   position: relative;
-  margin-bottom: 213px;
 }
 
 .header__top-inner {
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  max-width: 1440px;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.header__top-inner:hover {
+  opacity: 1;
 }
 
 .header__top-content {
@@ -152,6 +162,7 @@ img {
   line-height: 122px;
   text-align: center;
   color: #FFFFFF;
+  padding-top: 250px;
 }
 
 .header__content-description {
@@ -226,8 +237,8 @@ img {
 .burger__menu {
   display: none;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vw;
   z-index: 5;
   top: 0%;
   right: 0%;
@@ -251,6 +262,9 @@ img {
   letter-spacing: 3px;
   cursor: pointer;
   transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 100%;
 }
 
 .burger__menu-list a:hover {
@@ -266,7 +280,9 @@ img {
   height: 100%;
   background-color: #373A39;
   opacity: 0.5;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: -40%;
 }
 
 .burger__close {
@@ -319,7 +335,7 @@ img {
   width: 15px;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background-color: #F6F8FA;
   top: 0;
   right: 0;
@@ -358,7 +374,7 @@ img {
   width: 15px;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background-color: #fff;
   top: 0;
   right: 0;
@@ -535,7 +551,7 @@ img {
   width: 16px;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background-color: #F6F8FA;
   top: 0;
   right: 0;
@@ -582,7 +598,7 @@ img {
   width: 8px;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background-color: #fff;
   top: 0;
   right: 0;
@@ -860,7 +876,7 @@ img {
   width: 25px;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background-color: #F6F8FA;
   top: 0;
   right: 0;
@@ -942,7 +958,7 @@ img {
   width: 10px;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background-color: #fff;
   top: 0;
   right: 0;
@@ -993,7 +1009,7 @@ img {
   width: 14px;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background-color: #F6F8FA;
   top: 0;
   right: 0;
@@ -1096,7 +1112,7 @@ img {
   width: 17px;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background-color: #fff;
   top: 0;
   right: 0;
@@ -1427,10 +1443,6 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .header__top {
-    margin-bottom: 130px;
-  }
-
   .menu {
     display: none;
   }

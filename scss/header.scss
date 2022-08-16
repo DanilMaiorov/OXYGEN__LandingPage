@@ -6,10 +6,20 @@
 }
 .header__top {
     position: relative;
-    margin-bottom: 213px;
+    //margin-bottom: 213px;
 }
 .header__top-inner {
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    max-width: 1440px;
+    width: 100% ;
+    z-index: 2;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.header__top-inner:hover {
+    opacity: 1;
 }
 .header__top-content {
     max-width: 1440px;
@@ -72,6 +82,7 @@
     line-height: 122px;
     text-align: center;
     color: #FFFFFF;
+    padding-top: 250px;
 }
 .header__content-description {
     padding-bottom: 285px;
@@ -143,8 +154,8 @@
 .burger__menu {
     display: none;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;   
     z-index: 5;
     top: 0%;
     right: 0%;
@@ -167,7 +178,10 @@
     font-family: $secondFont;
     letter-spacing: 3px;
     cursor: pointer;
-    transition: all 0.5s;  
+    transition: all 0.5s; 
+    position: absolute;
+    top: 0;
+    left: 100%; 
 }
 .burger__menu-list a:hover {
     font-weight: 700;
@@ -180,7 +194,10 @@
     height: 100%;
     background-color: $darkGrayColor;
     opacity: 0.5;
-    position: relative;
+    //position: relative;
+    position: absolute;
+    top: 0;
+    left: -40%; 
 }
 .burger__close {
     position: absolute;

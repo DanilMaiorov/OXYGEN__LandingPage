@@ -10,39 +10,64 @@
     <title>OXYGEN</title>
 </head>
 <body>
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__top">
                 <div class="header__top-inner">
                     <div class="header__top-content">
                         <div class="logo">
-                            <a class="logo__link" href="#">
+                            <a class="logo__link" href="#header">
                                 <img class="logo__img" src="./img/logo.png" alt="logo">
                             </a>
                         </div>
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__list-item">
-                                    <a class="menu__link menu__link--active" href="#">HOME</a>
+                                    <a class="menu__link menu__link--active" href="#header">HOME</a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__link" href="#">ABOUT US</a>
+                                    <a class="menu__link" href="#about">ABOUT US</a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__link" href="#">PORTFOLIO</a>
+                                    <a class="menu__link" href="#portfolio">PORTFOLIO</a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__link" href="#">OUR TEAM</a>
+                                    <a class="menu__link" href="#team">OUR TEAM</a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__link" href="#">BLOG</a>
+                                    <a class="menu__link" href="#blog">BLOG</a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__link" href="#">CONTACT</a>
+                                    <a class="menu__link" href="#footer">CONTACT</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="burger__btn">
                             <span class="burger__btn--line"></span>
+                        </div>
+                    </div>
+                    <div class="burger__menu">
+                        <ul class="burger__menu-list">
+                            <li aria-colspan="burger__menu-item" class>
+                                <a class="burger__menu-link" href="#header">HOME</a>
+                            </li>
+                            <li aria-colspan="burger__menu-item" class>
+                                <a class="burger__menu-link" href="#about">ABOUT US</a>
+                            </li>
+                            <li aria-colspan="burger__menu-item" class>
+                                <a class="burger__menu-link" href="#portfolio">PORTFOLIO</a>
+                            </li>
+                            <li aria-colspan="burger__menu-item" class>
+                                <a class="burger__menu-link" href="#team">OUR TEAM</a>
+                            </li>
+                            <li aria-colspan="burger__menu-item" class>
+                                <a class="burger__menu-link" href="#blog">BLOG</a>
+                            </li>
+                            <li aria-colspan="burger__menu-item" class>
+                                <a class="burger__menu-link" href="#footer">CONTACT</a>
+                            </li>
+                        </ul>
+                        <div class="burger__overlay">
+                            <div class="burger__close"></div>
                         </div>
                     </div>
                 </div>
@@ -56,34 +81,10 @@
                     </div>
                 </div>
             </div>
-            <div class="burger__menu">
-                <ul class="burger__menu-list">
-                    <li aria-colspan="burger__menu-item" class>
-                        <a class="burger__menu-link" href="#">HOME</a>
-                    </li>
-                    <li aria-colspan="burger__menu-item" class>
-                        <a class="burger__menu-link" href="#">ABOUT US</a>
-                    </li>
-                    <li aria-colspan="burger__menu-item" class>
-                        <a class="burger__menu-link" href="#">PORTFOLIO</a>
-                    </li>
-                    <li aria-colspan="burger__menu-item" class>
-                        <a class="burger__menu-link" href="#">OUR TEAM</a>
-                    </li>
-                    <li aria-colspan="burger__menu-item" class>
-                        <a class="burger__menu-link" href="#">BLOG</a>
-                    </li>
-                    <li aria-colspan="burger__menu-item" class>
-                        <a class="burger__menu-link" href="#">CONTACT</a>
-                    </li>
-                </ul>
-                <div class="burger__overlay">
-                    <div class="burger__close"></div>
-                </div>
-            </div>
+
         </header>
     
-<!--         <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__inner">
                     <div class="title about__title">
@@ -97,7 +98,7 @@
             </div>
         </section>
     
-        <section class="expertise">
+        <section class="expertise" id="blog">
             <div class="container">
                 <div class="expertise__wrapper">
                     <div class="title expertise__title">Our Expertise</div>
@@ -142,7 +143,7 @@
         <section class="features">
             <div class="features__wrapper">
                 <div class="features__image">
-                    <img class="features__image-img" src="./img/magic.png" alt="">
+                    <img class="features__image-img" src="./img/magic.png" alt="make-magic">
                 </div>
                 <div class="features__content">
                     <div class="container">
@@ -158,7 +159,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio__head">
                     <div class="title portfolio__title">
@@ -178,7 +179,7 @@
                         <div class="portfolio__content portfolio__content--img-1-1">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img">
-                                    <img src="./img/1-1.png" alt="">
+                                    <img src="./img/1-1.png" alt="portfolio-img">
                                 </div>
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -187,7 +188,7 @@
                         <div class="portfolio__content portfolio__content--img-2-1">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img">
-                                    <img src="./img/2-1.png" alt="">
+                                    <img src="./img/2-1.png" alt="portfolio-img">
                                 </div>    
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -196,7 +197,7 @@
                         <div class="portfolio__content portfolio__content--img-3-1">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img ">
-                                    <img src="./img/3-1.png" alt="">
+                                    <img src="./img/3-1.png" alt="portfolio-img">
                                 </div>   
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -205,7 +206,7 @@
                         <div class="portfolio__content portfolio__content--img-4-1 ">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img ">
-                                    <img src="./img/4-1.png" alt="">
+                                    <img src="./img/4-1.png" alt="portfolio-img">
                                 </div>    
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -214,7 +215,7 @@
                         <div class="portfolio__content portfolio__content--img-1-2">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img">
-                                    <img src="./img/1-2.png" alt="">
+                                    <img src="./img/1-2.png" alt="portfolio-img">
                                 </div>    
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -223,7 +224,7 @@
                         <div class="portfolio__content portfolio__content--img-2-2">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img">
-                                    <img src="./img/2-2.png" alt="">
+                                    <img src="./img/2-2.png" alt="portfolio-img">
                                 </div>
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -232,7 +233,7 @@
                         <div class="portfolio__content portfolio__content--img-3-2">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img">
-                                    <img src="./img/3-2.png" alt="">
+                                    <img src="./img/3-2.png" alt="portfolio-img">
                                 </div>
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -241,7 +242,7 @@
                         <div class="portfolio__content portfolio__content--img-4-2">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img">
-                                    <img src="./img/4-2.png" alt="">
+                                    <img src="./img/4-2.png" alt="portfolio-img">
                                 </div>
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -250,7 +251,7 @@
                         <div class="portfolio__content portfolio__content--img-2-3">
                             <div class="portfolio__item">
                                 <div class="portfolio__item-img">
-                                    <img src="./img/2-3.png" alt="">
+                                    <img src="./img/2-3.png" alt="portfolio-img">
                                 </div>
                                 <div class="portfolio__item-title">OCCA CUPIDATAT</div>
                                 <div class="portfolio__item-descr">DESIGN</div>
@@ -360,7 +361,7 @@
             </div>
         </section>
     
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="title team__title"> Our team</div>
                 <div class="team__items">
@@ -450,14 +451,14 @@
                     <img src="./img/map.png" alt="map">
                 </div>
             </div>
-        </section>  -->
+        </section>
     
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="footer__body">
                 <div class="container">
                     <div class="footer__content">
                         <div class="logo logo--line">
-                            <a class="logo__link" href="#">
+                            <a class="logo__link" href="#header">
                                 <img class="logo__img" src="./img/logo.png" alt="logo">
                             </a>
                         </div>
@@ -474,9 +475,9 @@
                         <a class="footer__email" href="mailto:info@mail.com">info@mail.com</a>
                     </div>
                 </div>
-                <button class="footer__top-btn" type="button">
+                <a class="footer__top-btn" href="#header">
                     <img src="./img/angle-up.png" alt="angleUp">
-                </button>
+                </a>
             </div>
             <div class="footer__copy">@2015 Oxygen Theme</div>
         </footer>
