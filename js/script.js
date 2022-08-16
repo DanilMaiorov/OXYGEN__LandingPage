@@ -47,7 +47,6 @@ function animationBurgerOpen (x, y) {
             y.style.left = '0%';
             y.style.left = progress; 
             x.style.left = '40%';
-            x.style.left = progress; 
         }
         
     });
@@ -63,7 +62,6 @@ function animationBurgerClose (x, y) {
             x.style.left = '100%';
             x.style.left = progress; 
             y.style.left = '-40%';
-            y.style.left = progress; 
             setTimeout(() => {
                 burgerMenu.style.display = 'none';
             }, 300);
@@ -82,13 +80,11 @@ linksHeader.forEach((item, index) => {
             });
             window.onscroll = function () {};
         }
-        
         animationBurgerClose(burgerList, burgerOverlay);
     });
 });
 
 burgerOpenBtn.addEventListener('click', () => {
-    console.log('click');
     animationBurgerOpen(burgerList, burgerOverlay);
     disableScrolling ();
 });
